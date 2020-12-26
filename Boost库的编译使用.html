@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c258bb101609862"></script>
+
+
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "f29bed36"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+  <meta name="google-site-verification" content="i9xX-QciZhzIQmFB93J3PUKRXElCJ6lJC17GV6wh9w0">
+  
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="EhXXdbSOXv">
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Boost库的编译和使用">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="TJL的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Boost库的编译和使用">
+<meta name="keywords" content="Boost库的编译和使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Boost库的编译使用">
+<meta property="og:url" content="http://www.tjl-myblog.cn/Boost库的编译使用.html">
+<meta property="og:site_name" content="TJL的博客">
+<meta property="og:description" content="Boost库的编译和使用">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/1.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/2.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/3.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/3.5.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/4.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/5.png">
+<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/6.png">
+<meta property="og:updated_time" content="2019-12-21T11:04:47.913Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Boost库的编译使用">
+<meta name="twitter:description" content="Boost库的编译和使用">
+<meta name="twitter:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","Sidebar Display, available value (only for Muse | Mist)":null,"display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '1Q44Q725B0',
+      apiKey: 'eab77275713240120eb2eccee7f178a9',
+      indexName: 'find_content',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"输入关键字","hits_empty":"没有找到任何搜索结果: ${query}","hits_stats":"${hits} 找到约 ${time} 条结果"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.tjl-myblog.cn/Boost库的编译使用.html">
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+          let password = prompt('请输入文章密码')
+            if (password === ''){//用户点击确定但是没有输入内容
+              alert('密码不能为空');
+              history.back();
+              return;
+            }
+            else if (password !== ''){//确定
+              alert('密码错误！');
+              history.back();
+            }
+            else if(!password){//取消 返回的null
+              history.back();
+              return;
+            }
+            
+        }
+    })();
+</script>
+
+  <!--<title>Boost库的编译使用 | TJL的博客</title> 原 下面是经过优化的SEO-->
+  <title>Boost库的编译使用 | TJL的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- 左下角播放器 -->
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+    <!--下面是右上角的小猫-->
+    <a href="https://github.com/tangjialang?tab=repositories" class="github-corner" aria-label="View source on GitHub" rel="external nofollow noopener noreferrer" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TJL的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.tjl-myblog.cn/Boost库的编译使用.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="游戏人生">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://image.tjl-myblog.cn:4455/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TJL的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Boost库的编译使用</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T14:45:37+08:00">
+                2019-04-26
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-12-21T19:04:47+08:00">
+                2019-12-21
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Boost库/" itemprop="url" rel="index">
+                    <span itemprop="name">Boost库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  Boost库的编译和使用
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://image.tjl-myblog.cn:4455/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+<blockquote>
+<p>在经历了一天半的时间终于把boost库给编译好了 这里记录一下 如果想学习使用boost库的 可以查看官方文档 由于英语太差的本人只有用翻译了 很苦恼</p>
+</blockquote>
+<h2 id="编译Boost库"><a href="#编译Boost库" class="headerlink" title="编译Boost库"></a>编译Boost库</h2><h3 id="环境："><a href="#环境：" class="headerlink" title="环境："></a>环境：</h3><ul>
+<li>Windows7</li>
+<li>Visual Studio 2017</li>
+<li><a href="https://dl.bintray.com/boostorg/release/1.66.0/source/" rel="external nofollow noopener noreferrer" target="_blank">boost_1_66_0</a></li>
+</ul>
+<blockquote>
+<p>提示：下载 <a href="https://dl.bintray.com/boostorg/release/1.66.0/source/" rel="external nofollow noopener noreferrer" target="_blank">boost_1_66_0</a>用 <code>Visual Studio Tools</code> 的 <code>VS_2017的开发人员命令提示符</code> 来编译 别用cmd命令窗口来编译<code>boost</code> 用其他VS版本也是可以的<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/1.png" alt="图片还没有哦"></p>
+</blockquote>
+<h3 id="提前准备"><a href="#提前准备" class="headerlink" title="提前准备"></a>提前准备</h3><p>解压 boost库 使用 <code>VS_2017的开发人员命令提示符</code> 窗口切换到<code>bootstrap.bat</code> 文件目录下 我的是在E盘下 这里做个示范</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /d E:\boost_1_66_0   // <span class="built_in">cd</span> /d 表示切换到任意路径下 后面分路径即可</span><br></pre></td></tr></table></figure>
+<p>然后执行 <code>bootstrap.bat</code>（窗口内输入文件名然后回车就是执行了）稍等片刻后就会生成 <code>b2.exe bjam.exe project-config.jam bootstrap.log</code>四个文件。其中<code>b2.exe</code>和<code>bjam.exe</code>两个作用一样，<code>bjam.exe</code>对应的是老版本，<code>b2.exe</code>是<code>bjam.exe</code>的升级版本</p>
+<blockquote>
+<p>这里如果你懒得切换目录也可以直接把 <code>bootstrap.bat</code> 拖进窗口 路径会自动生成 然后回车就会生成文件了</p>
+</blockquote>
+<h3 id="使用bjam-或者b2-编译-Boost"><a href="#使用bjam-或者b2-编译-Boost" class="headerlink" title="使用bjam(或者b2)编译 Boost"></a>使用bjam(或者b2)编译 Boost</h3><h4 id="简便编译方法"><a href="#简便编译方法" class="headerlink" title="简便编译方法"></a>简便编译方法</h4><blockquote>
+<p>其实可以直接 <code>bjam.exe</code> 运行进行编译也可以直接用 但是可能编译出来的版本并不是你想要的 如果你想编译不同的版本 如果你想急于使用可以直接跳到<a href="#use_boost">Boost库的使用</a>但是我还是建议你把它看完 这样你会对编译boost库有个比较完整的理解。</p>
+</blockquote>
+<h4 id="命令编译方法"><a href="#命令编译方法" class="headerlink" title="命令编译方法"></a>命令编译方法</h4><p>生成好编译程序以后，可以使用命令行来编译Boost了。在当前VisualStudio的工具中输入下面示例命令行即可执行编译:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-- 注意空格 多余空格会报错的</span><br><span class="line">bjam stage --toolset=msvc-<span class="number">14</span>.<span class="number">0</span> --with-thread --stagedir="D:\boost_1_66_1" link=static runtime-link=static runtime-link=shared threading=multi debug release</span><br><span class="line">-- 我用的</span><br><span class="line">bjam stage --toolset=msvc-<span class="number">12</span>.<span class="number">0</span> --without-python --without-mpi --without-wave --without-graph --without-math --without-regex --without-test --without-program_options --without-serialization --without-signals --stagedir="D:\boost_1_66_2" link=static runtime-link=static runtime-link=shared threading=multi debug release</span><br></pre></td></tr></table></figure>
+<p>这里对命令进行说明：</p>
+<h5 id="stage-install"><a href="#stage-install" class="headerlink" title="stage/install"></a>stage/install</h5><p><code>stage</code>表示只生成库（dll和lib）， <code>install</code>还会生成包含头文件的<code>include</code>目录。推荐使用<code>stage</code>，因为<code>install</code>生成的这个<code>include</code>目录实际就是<code>boost</code>安装包解压缩后的<code>boost</code>目录<code>（X:\boost_X_XX_X\boost</code>，只比<code>include</code>目录多几个非hpp文件，都很小），所以可以直接使用，而且不同的IDE都可以使用同一套头文件，这样既节省编译时间，也节省硬盘空间。</p>
+<h5 id="–toolset"><a href="#–toolset" class="headerlink" title="–toolset"></a>–toolset</h5><p>指定编译器，可选的如<code>borland、gcc、msvc（VC6）、msvc-9.0（VS2008msvc-10.0（VS2010）、msvc-11.0（VS2012）、msvc-12.0（VS2013）、msvc-14.0（VS2015）、msvc-14.1（VS2017）</code>等。</p>
+<h5 id="address-model"><a href="#address-model" class="headerlink" title="address-model"></a>address-model</h5><p>表示多少位 address-model=32 address-model=64 默认32/64都编译</p>
+<h5 id="–without-with"><a href="#–without-with" class="headerlink" title="–without/with"></a>–without/with</h5><p>选择不编译/编译哪些库。因为<code>python、mpi</code>等库我都用不着，所以排除之。还有<code>wave、graph、math、regex、test、program_options、serialization、signals</code>这几个库编出的静态lib都非常大，所以不需要的也可以<code>without</code>。这可以根据各人需要进行选择，默认是全部编译。但是需要注意，如果选择编译<code>python</code>的话，是需要<code>python</code>语言支持的，可以到<a href="https://www.python.org/" rel="external nofollow noopener noreferrer" target="_blank">python官方主页</a>下载安装。查看<code>boost</code>包含库的命令是<code>bjam --show-libraries</code>。</p>
+<h5 id="–stagedir-prefix"><a href="#–stagedir-prefix" class="headerlink" title="–stagedir/prefix"></a>–stagedir/prefix</h5><p><code>stage</code>时使用<code>stagedir</code>，<code>install时</code>使用<code>prefix</code>，表示编译生成文件的路径。推荐给不同的IDE指定不同的目录，如VS2017对应的是 <code>x:\boost_1_66_0\lib\msvc-14.1</code>。默认在<code>stage</code>目录下</p>
+<h5 id="build-dir"><a href="#build-dir" class="headerlink" title="build-dir"></a>build-dir</h5><p>编译生成的中间文件的路径。默认就在根目录（X:\boost_X_XX_X\boost）下，目录名为bin.v2，等编译完成后可将这个目录全部删除（没用了），所以不需要去设置。</p>
+<h5 id="–build-type-complete"><a href="#–build-type-complete" class="headerlink" title="–build-type=complete"></a>–build-type=complete</h5><p>表示生成debug release static shared的各种版本</p>
+<h5 id="link"><a href="#link" class="headerlink" title="link"></a>link</h5><p>生成动态链接库/静态链接库。生成动态链接库需使用<code>shared</code>方式，生成静态链接库需使用<code>static</code>方式。一般<code>boost</code>库可能都是以<code>static</code>方式编译，因为最终发布程序带着<code>boost</code>的dll感觉会比较累赘。</p>
+<h5 id="runtime-link"><a href="#runtime-link" class="headerlink" title="runtime-link"></a>runtime-link</h5><p><code>C/C++</code>运行库 动态/静态链接。同样有<code>shared</code>和<code>static</code>两种方式，这样<code>runtime-link</code>和<code>link</code>一共可以产生4种组合方式，各人可以根据自己的需要选择编译。</p>
+<h5 id="threading"><a href="#threading" class="headerlink" title="threading"></a>threading</h5><p>单/多线程编译。一般都写多线程程序，当然要指定<code>multi</code>方式了；如果需要编写单线程程序，那么还需要编译单线程库，可以使用<code>single</code>方式。</p>
+<h5 id="debug-release"><a href="#debug-release" class="headerlink" title="debug/release"></a>debug/release</h5><p>编译debug/release版本。一般都是程序的debug版本对应库的debug版本，所以两个都编译。</p>
+<p><span id="use_boost"><br>    <h2>Boost库的使用</h2><br></span></p>
+<h3 id="通过包含文件路径来使用（绝对路径）"><a href="#通过包含文件路径来使用（绝对路径）" class="headerlink" title="通过包含文件路径来使用（绝对路径）"></a>通过包含文件路径来使用（绝对路径）</h3><p>头文件的链接</p>
+<p><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/2.png" alt="图片还没有哦"></p>
+<p>静态库的链接</p>
+<p><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/3.png" alt="图片还没有哦"></p>
+<h3 id="通过设置环境变量来使用（宏链接）"><a href="#通过设置环境变量来使用（宏链接）" class="headerlink" title="通过设置环境变量来使用（宏链接）"></a>通过设置环境变量来使用（宏链接）</h3><blockquote>
+<p>配置好宏之后看看有没有路径 如果没有请重启下IDE<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/3.5.png" alt="图片还没有哦"></p>
+</blockquote>
+<p>boost编译出来非常大，除去bin.v2后文件体积还有2G左右，不适合到处放，新建两个环境变量然后引用就可以了</p>
+<p>添加环境变量<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/4.png" alt="图片还没有哦"></p>
+<p>IDE里面宏引用<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/5.png" alt="图片还没有哦"></p>
+<p>我使用的环境变量：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-- 变量名 BOOST_ROOT 变量值 D:\boost_1_66_0</span><br><span class="line">$(BOOST_ROOT)=D:\boost_1_66_0</span><br><span class="line">-- 变量名 BOOST_ROOT_LIB 变量值 D:\boost_1_66_0\stage\lib</span><br><span class="line">$(BOOST_ROOT_LIB)=D:\boost_1_66_0\stage\lib</span><br></pre></td></tr></table></figure>
+<h4 id="用绝对路径和使用宏的区别："><a href="#用绝对路径和使用宏的区别：" class="headerlink" title="用绝对路径和使用宏的区别："></a>用绝对路径和使用宏的区别：</h4><ul>
+<li>绝对路径：当在网上下载其他人写的代码的时候，在工程配置中，不会有绝对路径，需要重新配置。</li>
+<li>宏：不需要重新配置了。只要新下载的工程的配置文件中有用宏引用就可以了（前提是有先配置Boost库的环境变量）。</li>
+</ul>
+<p>使用代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"boost/thread.hpp"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"iostream"</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mythread</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">" hello,thread! "</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>* argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    boost::function&lt;<span class="keyword">void</span>()&gt; f(mythread);</span><br><span class="line">    boost::<span class="function">thread <span class="title">t</span><span class="params">(f)</span></span>;</span><br><span class="line">    t.join();</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">" thread is over! "</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    system(<span class="string">"pause"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>成功：<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Boost库的编译使用/6.png" alt="图片还没有哦"></p>
+<p>如果你运行成功的话那么你的Boost库就成功的编译了 以后想使用添加到自己的项目里面即可</p>
+<ul>
+<li><p>如果你遇到 编译错误有什么不兼容的 这个一般只会出现在使用简单编译方法</p>
+<p>  原因可能就是：</p>
+<ul>
+<li><p>版本对应不上 出现你需要仔细检查下你的版本</p>
+<p>解决方法：</p>
+</li>
+<li>使用命令编译方法 编译对应的版本</li>
+</ul>
+</li>
+<li><p>如果出现无法打开文件 xxx.lib的请查看你的lib目录下到底有没有那个lib 如果有请查看你的 <code>项目属性 --&gt; C/C++ --&gt; 代码生成 --&gt; 运行库</code> 的类型</p>
+</li>
+</ul>
+<p>bjam参数：<br>命令|说明<br>—|—|—<br>–build-dir=<builddir> | 编译的临时文件会放在builddir里(这样比较好管理，编译完就可以把它删除了)<br>–stagedir=<stagedir> | 存放编译后库文件的路径，默认是stage<br>–build-type=complete | 编译所有版本，不然只会编译一小部分版本（确切地说是相当于:variant=release, threading=multi;link=shared|static;runtime-link=shared）<br>variant=debug|release | 决定编译什么版本(Debug or Release?)<br>link=static|shared | 决定使用静态库还是动态库。<br>threading=single|multi | 决定使用单线程还是多线程库。<br>runtime-link=static|shared | 决定是静态还是动态链接C/C++标准库。<br>–with-<library> | 只编译指定的库，如输入–with-regex就只编译regex库了。<br>–show-libraries | 显示需要编译的库名称</library></stagedir></builddir></p>
+<blockquote>
+<p>你可能并没有这么顺利会遇到很多奇怪的问题 下面我给出些链接希望对你有帮助<br><a href="https://blog.csdn.net/u013700908/article/details/82751159" rel="external nofollow noopener noreferrer" target="_blank">LNK1104 无法打开文件“libboost_system-vc141-mt-gd-x64-1_68.lib</a><br><a href="https://blog.csdn.net/pzhw520hchy/article/details/79998116" rel="external nofollow noopener noreferrer" target="_blank">boost安装提示 Building Boost.Build engine ‘cl’ 不是内部或外部命令，也不是可运行的程序 或批处理文件</a></p>
+</blockquote>
+<p>参考<br><a href="https://www.cnblogs.com/sanghg/p/5475044.html" rel="external nofollow noopener noreferrer" target="_blank">boost编译随笔</a><br><a href="https://blog.csdn.net/wojiuguowei/article/details/53195416" rel="external nofollow noopener noreferrer" target="_blank">配置boost环境变量</a></p>
+
+      
+    </div>
+    
+    
+    
+    
+    
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Boost库/" rel="tag"> <i class="fa fa-tag"></i> Boost库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/VS编译libuv.html" rel="next" title="VS编译libuv">
+                <i class="fa fa-chevron-left"></i> VS编译libuv
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/libuv-TCP服务器搭建.html" rel="prev" title="libuv_TCP服务器搭建">
+                libuv_TCP服务器搭建 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+
+    <div> 
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/Boost库的编译使用.html">Boost库的编译使用</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
+  <p><span>发布时间:</span>2019年04月26日 - 14:04</p>
+  <p><span>最后更新:</span>2019年12月21日 - 19:12</p>
+  <p><span>原始链接:</span><a href="/Boost库的编译使用.html" title="Boost库的编译使用">http://www.tjl-myblog.cn/Boost库的编译使用.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/Boost库的编译使用.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+
+
+          
+    </div>
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://image.tjl-myblog.cn:4455/images/wechatpay.jpg" alt="游戏人生 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://image.tjl-myblog.cn:4455/images/alipay.jpg" alt="游戏人生 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+    <div>
+      
+        <div>
+
+    <div style="text-align:center;color: #ccc;font-size:22px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+      
+    </div>
+    
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=RA-5c258bb101609862" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTg1Ny8xODQwMw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://image.tjl-myblog.cn:4455/images/avatar.jpeg" alt="游戏人生">
+            
+              <p class="site-author-name" itemprop="name" style="text-align: center;">游戏人生</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">40</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tangjialang" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1522848509t@gmail.com" target="_blank" title="E-Mail" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/1522848509t" target="_blank" title="Google" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://youtube.com/yourname" target="_blank" title="YouTube" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/weixin" target="_blank" title="CSDN" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-superpowers"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/89024bda3356" target="_blank" title="简书" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-book"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/" target="_blank" title="微博" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.zhihu.com/people/" target="_blank" title="知乎" rel="external nofollow noopener noreferrer">
+                      
+                        <i class="fa fa-fw fa-zhihu"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank" rel="external nofollow noopener noreferrer">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.chuangzaoshi.com/code" title="创造狮导航" target="_blank" rel="external nofollow noopener noreferrer">创造狮导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank" rel="external nofollow noopener noreferrer">前端书籍资料</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://e.xitu.io/" title="掘金酱" target="_blank" rel="external nofollow noopener noreferrer">掘金酱</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="V2EX" target="_blank" rel="external nofollow noopener noreferrer">V2EX</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="印记中文" target="_blank" rel="external nofollow noopener noreferrer">印记中文</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编译Boost库"><span class="nav-number">1.</span> <span class="nav-text">编译Boost库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境："><span class="nav-number">1.1.</span> <span class="nav-text">环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提前准备"><span class="nav-number">1.2.</span> <span class="nav-text">提前准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用bjam-或者b2-编译-Boost"><span class="nav-number">1.3.</span> <span class="nav-text">使用bjam(或者b2)编译 Boost</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简便编译方法"><span class="nav-number">1.3.1.</span> <span class="nav-text">简便编译方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#命令编译方法"><span class="nav-number">1.3.2.</span> <span class="nav-text">命令编译方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#stage-install"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">stage/install</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#–toolset"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">–toolset</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#address-model"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">address-model</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#–without-with"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">–without/with</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#–stagedir-prefix"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">–stagedir/prefix</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#build-dir"><span class="nav-number">1.3.2.6.</span> <span class="nav-text">build-dir</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#–build-type-complete"><span class="nav-number">1.3.2.7.</span> <span class="nav-text">–build-type=complete</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#link"><span class="nav-number">1.3.2.8.</span> <span class="nav-text">link</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#runtime-link"><span class="nav-number">1.3.2.9.</span> <span class="nav-text">runtime-link</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#threading"><span class="nav-number">1.3.2.10.</span> <span class="nav-text">threading</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#debug-release"><span class="nav-number">1.3.2.11.</span> <span class="nav-text">debug/release</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#use_boost"><span class="nav-number">2.</span> <span class="nav-text">Boost库的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过包含文件路径来使用（绝对路径）"><span class="nav-number">2.1.</span> <span class="nav-text">通过包含文件路径来使用（绝对路径）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过设置环境变量来使用（宏链接）"><span class="nav-number">2.2.</span> <span class="nav-text">通过设置环境变量来使用（宏链接）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#用绝对路径和使用宏的区别："><span class="nav-number">2.2.1.</span> <span class="nav-text">用绝对路径和使用宏的区别：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018/10/13 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">游戏人生</span>
+
+  
+</div>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div> 底部hexo 驱动字
+
+
+
+  <span class="post-meta-divider">|</span> 底部hexo 驱动字 |
+
+-->
+
+  <div>Welcome to TJL's blog</div>
+  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div> 底部hexo 驱动字-->
+
+<!--<span class="post-count">Total Words:115.3k</span> 站内字总数-->
+
+<!-- 新增访客统计代码 -->
+
+<div class="busuanzi-count">
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      访问用户： <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
+    </span>
+    <div class="powered-by"></div>
+    <span class="site-uv">
+      <i class="fa fa-eye"></i>
+      访问次数： <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
+    </span>
+    <!-- 博客字数统计 -->
+    <span class="site-pv">
+      <i class="fa fa-pencil"></i>
+      博客全站共： <span class="post-count">115.3k</span> 字
+    </span>
+</div>
+<!-- 新增访客统计代码 END-->
+
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/21/2018 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "Run for "+dnum+" Days ";
+        document.getElementById("times").innerHTML = hnum + " Hours " + mnum + " m " + snum + " s";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<!--自动浏览-->
+<script type="text/javascript" src="/js/src/my_auto.js"></script>
+
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
