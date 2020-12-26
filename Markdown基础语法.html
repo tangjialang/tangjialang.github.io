@@ -122,14 +122,14 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="学会用Markdown语法写属于自己的文章">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
 <meta property="og:image" content="http://www.tjl-myblog.cn/图片地址">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/Markdown基础语法/1.jpg">
-<meta property="og:updated_time" content="2019-12-21T11:04:47.921Z">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/images/blog_article/Markdown基础语法/1.jpg">
+<meta property="og:updated_time" content="2020-12-26T15:31:01.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown基础语法">
 <meta name="twitter:description" content="学会用Markdown语法写属于自己的文章">
-<meta name="twitter:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
 
 
 
@@ -387,7 +387,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="游戏人生">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://image.tjl-myblog.cn:4455/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/BlogImg/images/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -427,8 +427,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-12-21T19:04:47+08:00">
-                2019-12-21
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:31:01+08:00">
+                2020-12-26
               </time>
             
           </span>
@@ -523,7 +523,7 @@
       
 
       
-        <p><img src="http://image.tjl-myblog.cn:4455/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="images/BlogImg/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <blockquote>
 <p>这篇文章会教会你使用Markdownp基础语法书写你自己的博客文章</p>
 </blockquote>
@@ -582,7 +582,7 @@
 <h3 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h3><p>在文章中插入你喜欢的图片<br>语法：<br><img src="图片地址" alt="图片alt" title="&#39;图片title&#39;"><br>‘图片alt’:当你的图片路径加载不出你的图片资源时 就会显示alt这个value</p>
 <p>示例：</p>
 <pre><code>![](/images/blog_article/Markdown基础语法/1.jpg &quot;这是图片title哦&quot;)
-</code></pre><p>效果：<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/Markdown基础语法/1.jpg" alt="图片消失啦" title="这是图片title哦"></p>
+</code></pre><p>效果：<br><img src="images/BlogImg/images/blog_article/Markdown基础语法/1.jpg" alt="图片消失啦" title="这是图片title哦"></p>
 <h3 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h3><p>超链接：所谓的超链接是指从一个网页指向一个目标的连接关系，这个目标可以是另一个网页，也可以是相同网页上的不同位置，还可以是一个图片，一个电子邮件地址，一个文件，甚至是一个应用程序<br>语法：</p>
 <pre><code>[超链接名](超链接地址 &quot;超链接title&quot;)
 title可加可不加
@@ -646,10 +646,10 @@ title可加可不加
 </ol>
 <h4 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h4><p>嵌套注意：上一级和下一级之间敲三个空格即可 上面已经用有序列表做了演示哦</p>
 <h3 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h3><p>语法：</p>
-<pre><code>表头|表头|表头
-:---|:--:|---:
-内容|内容|内容
-内容|内容|内容
+<pre><code>| 表头 | 表头  | 表头 |
+| :--- | :---: | ---: |
+| 内容 | 内容  | 内容 |
+| 内容 | 内容  | 内容 |
 
 第二行分割表头和内容。
 - 有一个就行，为了对齐，多加了几个
@@ -660,12 +660,12 @@ title可加可不加
 注：原生的语法两边都要用 | 包起来。此处省略
 </code></pre><p>示例：</p>
 <pre><code>姓名(左对齐) 技能(居中) 排行(右对齐)
-姓名| 技能 | 排行
-:---|:-:|--:
-刘备|哭|无地之容
-关羽|打|二哥
-张飞_字玄德|骂|三弟
-</code></pre><p>效果：<br>姓名| 技能 | 排行<br>:—|:-:|–:<br>刘备|哭|无地之容<br>关羽|打|二哥<br>张飞_字玄德|骂|三弟</p>
+| 姓名        | 技能  |     排行 |
+| :---------- | :---: | -------: |
+| 刘备        |  哭   | 无地之容 |
+| 关羽        |  打   |     二哥 |
+| 张飞_字玄德 |  骂   |     三弟 |
+</code></pre><p>效果：<br>| 姓名        | 技能  |     排行 |<br>| :———- | :—: | ——-: |<br>| 刘备        |  哭   | 无地之容 |<br>| 关羽        |  打   |     二哥 |<br>| 张飞_字玄德 |  骂   |     三弟 |</p>
 <blockquote>
 <p>这个可能对刚看到的朋友还是有点摸不着头脑 但是我相信你如果多写几遍肯定没有问题的 加油</p>
 </blockquote>
@@ -747,7 +747,7 @@ title可加可不加
   <p><span>本文标题:</span><a href="/Markdown基础语法.html">Markdown基础语法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
   <p><span>发布时间:</span>2019年01月11日 - 18:01</p>
-  <p><span>最后更新:</span>2019年12月21日 - 19:12</p>
+  <p><span>最后更新:</span>2020年12月26日 - 23:12</p>
   <p><span>原始链接:</span><a href="/Markdown基础语法.html" title="Markdown基础语法">http://www.tjl-myblog.cn/Markdown基础语法.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/Markdown基础语法.html" aria-label="复制成功！"></i></span>
   </p>
@@ -786,14 +786,14 @@ title可加可不加
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="http://image.tjl-myblog.cn:4455/images/wechatpay.jpg" alt="游戏人生 微信支付">
+        <img id="wechat_qr" src="images/BlogImg/images/wechatpay.jpg" alt="游戏人生 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="http://image.tjl-myblog.cn:4455/images/alipay.jpg" alt="游戏人生 支付宝">
+        <img id="alipay_qr" src="images/BlogImg/images/alipay.jpg" alt="游戏人生 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -887,7 +887,7 @@ title可加可不加
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://image.tjl-myblog.cn:4455/images/avatar.jpeg" alt="游戏人生">
+              <img class="site-author-image" itemprop="image" src="/images/BlogImg/images/avatar.jpeg" alt="游戏人生">
             
               <p class="site-author-name" itemprop="name" style="text-align: center;">游戏人生</p>
               <p class="site-description motion-element" itemprop="description"></p>

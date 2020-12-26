@@ -122,12 +122,12 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="MySQL一些通用命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
-<meta property="og:updated_time" content="2019-12-21T11:04:47.922Z">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
+<meta property="og:updated_time" content="2020-12-26T15:31:01.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL常用命令">
 <meta name="twitter:description" content="MySQL一些通用命令">
-<meta name="twitter:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
 
 
 
@@ -385,7 +385,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="游戏人生">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://image.tjl-myblog.cn:4455/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/BlogImg/images/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -425,8 +425,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-12-21T19:04:47+08:00">
-                2019-12-21
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:31:01+08:00">
+                2020-12-26
               </time>
             
           </span>
@@ -521,7 +521,7 @@
       
 
       
-        <p><img src="http://image.tjl-myblog.cn:4455/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="images/BlogImg/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <h2 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h2><p>需要下载的工具<br><a href="http://dev.mysql.com/downloads" rel="external nofollow noopener noreferrer" target="_blank">MySQL 本地服务器</a><br><a href="https://mysql-administrator.en.softonic.com/" rel="external nofollow noopener noreferrer" target="_blank">MySQL Administrator</a> （MySQL管理器）<br><a href="https://downloads.mysql.com/archives/query/" rel="external nofollow noopener noreferrer" target="_blank">MySQL Query Browser</a> （为一个图形交互客户机）</p>
 <hr>
 <h3 id="使用完全限定的表名"><a href="#使用完全限定的表名" class="headerlink" title="使用完全限定的表名"></a>使用完全限定的表名</h3><p>SQL也可能会使用完全限定的名字来引用列（同时使用表名和列字）。请看以下例子：</p>
@@ -617,7 +617,6 @@
 <h3 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h3><table>
 <thead>
 <tr>
-<th></th>
 <th>命令</th>
 <th>作用</th>
 </tr>
@@ -637,7 +636,6 @@
 <h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><table>
 <thead>
 <tr>
-<th></th>
 <th>命令</th>
 <th>作用</th>
 </tr>
@@ -675,7 +673,6 @@
 <h3 id="条件判断-筛选"><a href="#条件判断-筛选" class="headerlink" title="条件判断-筛选"></a>条件判断-筛选</h3><table>
 <thead>
 <tr>
-<th></th>
 <th>命令</th>
 <th>作用</th>
 </tr>
@@ -687,7 +684,7 @@
 </tr>
 <tr>
 <td>SELECT columns FROM tablename WHRER columns BETWEEN xxx AND xxx;</td>
-<td>返回范围内的值包括起始和结束位置 </td>
+<td>返回范围内的值包括起始和结束位置</td>
 </tr>
 <tr>
 <td>SELECT columns FROM tablename WHRER IS NULL;</td>
@@ -717,7 +714,6 @@
 <h3 id="WHERE子句操作符"><a href="#WHERE子句操作符" class="headerlink" title="WHERE子句操作符"></a>WHERE子句操作符</h3><table>
 <thead>
 <tr>
-<th></th>
 <th>操作符</th>
 <th>作用</th>
 </tr>
@@ -1414,7 +1410,7 @@
 <td>包含，词必须存在</td>
 </tr>
 <tr>
-<td>-</td>
+<td>—</td>
 <td>排除，词必须不出现</td>
 </tr>
 <tr>
@@ -1457,7 +1453,7 @@
 <li><p>布尔文本搜索中的 &gt; 升级 和 &lt; 降级有什么用</p>
 </li>
 </ul>
-<h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>命令|作用<br>—|—|— (cust_id,cust_name,cust_address,cust_city,cust_state,cust_zip,cust_country,cust_contact,cust_email)<br>INSERT INTO tablename VALUES(xxx,xxx,…) | 插入数据1 xxx的数据要按列的顺序来的 如果没有值就用NULL(允许NULL的字段) 不安全的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) | 插入数据2 更安全的更繁琐的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…),(xxx1,xxx2,…),(xxx1,xxx2,…) | 可以进行多条插入 也可以这样后面的用，隔开（MySQL用单条INSERT语句处理多个插入比使用多条INSERT语句快）<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) SELECT columns1,columns2,… FROM tablename | 可把查询的结果当做数据插入到相应的表中</p>
+<h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>| 命令 | 作用 |<br>| —- | —- ||(cust_id,cust_name,cust_address,cust_city,cust_state,cust_zip,cust_country,cust_contact,cust_email)<br>INSERT INTO tablename VALUES(xxx,xxx,…) | 插入数据1 xxx的数据要按列的顺序来的 如果没有值就用NULL(允许NULL的字段) 不安全的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) | 插入数据2 更安全的更繁琐的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…),(xxx1,xxx2,…),(xxx1,xxx2,…) | 可以进行多条插入 也可以这样后面的用，隔开（MySQL用单条INSERT语句处理多个插入比使用多条INSERT语句快）<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) SELECT columns1,columns2,… FROM tablename | 可把查询的结果当做数据插入到相应的表中</p>
 <p>注意事项：</p>
 <ul>
 <li>一般不要使用没有明确给出列的列表的INSERT INTO语句。使用列的列表能使SQL代码继续发挥作用，即使表结构发生了变化</li>
@@ -1495,7 +1491,7 @@
 </tr>
 <tr>
 <td>UPDATE tablename SET columns1 = NULL WHERE xxx = xxx</td>
-<td>删除莫一个值 可以使用UPDATE赋值为NULL来实现 </td>
+<td>删除莫一个值 可以使用UPDATE赋值为NULL来实现</td>
 </tr>
 </tbody>
 </table>
@@ -2064,7 +2060,7 @@
   <p><span>本文标题:</span><a href="/Mysql常用命令.html">MySQL常用命令</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
   <p><span>发布时间:</span>2019年03月22日 - 15:03</p>
-  <p><span>最后更新:</span>2019年12月21日 - 19:12</p>
+  <p><span>最后更新:</span>2020年12月26日 - 23:12</p>
   <p><span>原始链接:</span><a href="/Mysql常用命令.html" title="MySQL常用命令">http://www.tjl-myblog.cn/Mysql常用命令.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/Mysql常用命令.html" aria-label="复制成功！"></i></span>
   </p>
@@ -2103,14 +2099,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="http://image.tjl-myblog.cn:4455/images/wechatpay.jpg" alt="游戏人生 微信支付">
+        <img id="wechat_qr" src="images/BlogImg/images/wechatpay.jpg" alt="游戏人生 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="http://image.tjl-myblog.cn:4455/images/alipay.jpg" alt="游戏人生 支付宝">
+        <img id="alipay_qr" src="images/BlogImg/images/alipay.jpg" alt="游戏人生 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -2204,7 +2200,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://image.tjl-myblog.cn:4455/images/avatar.jpeg" alt="游戏人生">
+              <img class="site-author-image" itemprop="image" src="/images/BlogImg/images/avatar.jpeg" alt="游戏人生">
             
               <p class="site-author-name" itemprop="name" style="text-align: center;">游戏人生</p>
               <p class="site-description motion-element" itemprop="description"></p>

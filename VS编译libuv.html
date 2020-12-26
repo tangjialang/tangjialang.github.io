@@ -122,15 +122,15 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="VS编译libuv">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/2.png">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/3.png">
-<meta property="og:image" content="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/1.png">
-<meta property="og:updated_time" content="2019-12-21T11:04:47.924Z">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/images/blog_article/VS编译libuv/2.png">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/images/blog_article/VS编译libuv/3.png">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/images/blog_article/VS编译libuv/1.png">
+<meta property="og:updated_time" content="2020-12-26T15:31:01.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VS编译libuv">
 <meta name="twitter:description" content="VS编译libuv">
-<meta name="twitter:image" content="http://image.tjl-myblog.cn:4455/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
 
 
 
@@ -388,7 +388,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="游戏人生">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://image.tjl-myblog.cn:4455/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/BlogImg/images/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -428,8 +428,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-12-21T19:04:47+08:00">
-                2019-12-21
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:31:01+08:00">
+                2020-12-26
               </time>
             
           </span>
@@ -524,7 +524,7 @@
       
 
       
-        <p><img src="http://image.tjl-myblog.cn:4455/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="images/BlogImg/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <p><a href="http://docs.libuv.org/en/v1.x/" rel="external nofollow noopener noreferrer" target="_blank">libuv</a> 是 <code>node.js</code>的底层库</p>
 <h2 id="VS编译libuv"><a href="#VS编译libuv" class="headerlink" title="VS编译libuv"></a>VS编译libuv</h2><blockquote>
 <p>在建立工程的时候一定要把路径分明白：一般项目有三个目录 <code>proj.projname</code> 创建新工程后 退出VS然后来到项目路径创建路径 <code>src</code> 工程的源代码 <code>3rd</code> 第三方文件例如 <code>libuv</code> 在项目里面头文件其实是不用加的 因为加了也不会编译头文件 但是一般为了方便我们查看头文件 还是应该加载项目工程下</p>
@@ -533,8 +533,8 @@
 <li>先在官网把 <code>libuv</code> 的源码下载下来</li>
 <li>新建项目创建好区分好文件夹后 我们把 <code>libuv</code> 里面的 <code>include</code> 和 <code>src</code> 文件拷贝到项目文件的 <code>3rd</code> 下面</li>
 <li>在工程里面我们也区分好创建筛选器进行区分</li>
-<li>包含文件<br>  <img src="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/2.png" alt="图片还没有哦"></li>
-<li>项目包含头文件路径<br>  <img src="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/3.png" alt="图片还没有哦"></li>
+<li>包含文件<br>  <img src="images/BlogImg/images/blog_article/VS编译libuv/2.png" alt="图片还没有哦"></li>
+<li>项目包含头文件路径<br>  <img src="images/BlogImg/images/blog_article/VS编译libuv/3.png" alt="图片还没有哦"></li>
 </ul>
 <p><code>libuv</code> 编译需要的 <code>lib（#pragma comment(lib,&quot;libname&quot;)</code> 只对VS有用 所以在项目属性里面用链接器链接）：</p>
 <ul>
@@ -543,7 +543,7 @@
 <li>Psapi.lib</li>
 <li>Userenv.lib</li>
 </ul>
-<p>VS链接lib<br><img src="http://image.tjl-myblog.cn:4455/images/blog_article/VS编译libuv/1.png" alt="图片还没有哦"></p>
+<p>VS链接lib<br><img src="images/BlogImg/images/blog_article/VS编译libuv/1.png" alt="图片还没有哦"></p>
 <p><code>libuv</code>编写思想：</p>
 <ul>
 <li>创建一个对象例如socket</li>
@@ -610,7 +610,7 @@
   <p><span>本文标题:</span><a href="/VS编译libuv.html">VS编译libuv</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
   <p><span>发布时间:</span>2019年04月25日 - 10:04</p>
-  <p><span>最后更新:</span>2019年12月21日 - 19:12</p>
+  <p><span>最后更新:</span>2020年12月26日 - 23:12</p>
   <p><span>原始链接:</span><a href="/VS编译libuv.html" title="VS编译libuv">http://www.tjl-myblog.cn/VS编译libuv.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/VS编译libuv.html" aria-label="复制成功！"></i></span>
   </p>
@@ -649,14 +649,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="http://image.tjl-myblog.cn:4455/images/wechatpay.jpg" alt="游戏人生 微信支付">
+        <img id="wechat_qr" src="images/BlogImg/images/wechatpay.jpg" alt="游戏人生 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="http://image.tjl-myblog.cn:4455/images/alipay.jpg" alt="游戏人生 支付宝">
+        <img id="alipay_qr" src="images/BlogImg/images/alipay.jpg" alt="游戏人生 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -750,7 +750,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://image.tjl-myblog.cn:4455/images/avatar.jpeg" alt="游戏人生">
+              <img class="site-author-image" itemprop="image" src="/images/BlogImg/images/avatar.jpeg" alt="游戏人生">
             
               <p class="site-author-name" itemprop="name" style="text-align: center;">游戏人生</p>
               <p class="site-description motion-element" itemprop="description"></p>
