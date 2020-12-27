@@ -122,12 +122,12 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="MySQL一些通用命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
-<meta property="og:updated_time" content="2020-12-26T15:31:01.796Z">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/one.jpg">
+<meta property="og:updated_time" content="2020-12-26T15:53:41.129Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL常用命令">
 <meta name="twitter:description" content="MySQL一些通用命令">
-<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/BlogImg/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/one.jpg">
 
 
 
@@ -385,7 +385,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="游戏人生">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/BlogImg/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/images/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -425,7 +425,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:31:01+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:53:41+08:00">
                 2020-12-26
               </time>
             
@@ -521,7 +521,7 @@
       
 
       
-        <p><img src="images/BlogImg/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="images/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <h2 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h2><p>需要下载的工具<br><a href="http://dev.mysql.com/downloads" rel="external nofollow noopener noreferrer" target="_blank">MySQL 本地服务器</a><br><a href="https://mysql-administrator.en.softonic.com/" rel="external nofollow noopener noreferrer" target="_blank">MySQL Administrator</a> （MySQL管理器）<br><a href="https://downloads.mysql.com/archives/query/" rel="external nofollow noopener noreferrer" target="_blank">MySQL Query Browser</a> （为一个图形交互客户机）</p>
 <hr>
 <h3 id="使用完全限定的表名"><a href="#使用完全限定的表名" class="headerlink" title="使用完全限定的表名"></a>使用完全限定的表名</h3><p>SQL也可能会使用完全限定的名字来引用列（同时使用表名和列字）。请看以下例子：</p>
@@ -1410,7 +1410,7 @@
 <td>包含，词必须存在</td>
 </tr>
 <tr>
-<td>—</td>
+<td>-</td>
 <td>排除，词必须不出现</td>
 </tr>
 <tr>
@@ -1453,7 +1453,7 @@
 <li><p>布尔文本搜索中的 &gt; 升级 和 &lt; 降级有什么用</p>
 </li>
 </ul>
-<h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>| 命令 | 作用 |<br>| —- | —- ||(cust_id,cust_name,cust_address,cust_city,cust_state,cust_zip,cust_country,cust_contact,cust_email)<br>INSERT INTO tablename VALUES(xxx,xxx,…) | 插入数据1 xxx的数据要按列的顺序来的 如果没有值就用NULL(允许NULL的字段) 不安全的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) | 插入数据2 更安全的更繁琐的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…),(xxx1,xxx2,…),(xxx1,xxx2,…) | 可以进行多条插入 也可以这样后面的用，隔开（MySQL用单条INSERT语句处理多个插入比使用多条INSERT语句快）<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) SELECT columns1,columns2,… FROM tablename | 可把查询的结果当做数据插入到相应的表中</p>
+<h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><p>| 命令 | 作用 |<br>| —- | —- |  |(cust_id,cust_name,cust_address,cust_city,cust_state,cust_zip,cust_country,cust_contact,cust_email)<br>INSERT INTO tablename VALUES(xxx,xxx,…) | 插入数据1 xxx的数据要按列的顺序来的 如果没有值就用NULL(允许NULL的字段) 不安全的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) | 插入数据2 更安全的更繁琐的<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…),(xxx1,xxx2,…),(xxx1,xxx2,…) | 可以进行多条插入 也可以这样后面的用，隔开（MySQL用单条INSERT语句处理多个插入比使用多条INSERT语句快）<br>INSERT INTO tablename(columns1,columns2,…) VALUES(xxx1,xxx2,…) SELECT columns1,columns2,… FROM tablename | 可把查询的结果当做数据插入到相应的表中</p>
 <p>注意事项：</p>
 <ul>
 <li>一般不要使用没有明确给出列的列表的INSERT INTO语句。使用列的列表能使SQL代码继续发挥作用，即使表结构发生了变化</li>
@@ -2099,14 +2099,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="images/BlogImg/images/wechatpay.jpg" alt="游戏人生 微信支付">
+        <img id="wechat_qr" src="images/images/wechatpay.jpg" alt="游戏人生 微信支付">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="images/BlogImg/images/alipay.jpg" alt="游戏人生 支付宝">
+        <img id="alipay_qr" src="images/images/alipay.jpg" alt="游戏人生 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -2200,7 +2200,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/BlogImg/images/avatar.jpeg" alt="游戏人生">
+              <img class="site-author-image" itemprop="image" src="/images/images/avatar.jpeg" alt="游戏人生">
             
               <p class="site-author-name" itemprop="name" style="text-align: center;">游戏人生</p>
               <p class="site-description motion-element" itemprop="description"></p>
