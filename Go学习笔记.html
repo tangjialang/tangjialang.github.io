@@ -122,17 +122,17 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="Go学习的记录过程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.tjl-myblog.cn/images/one.jpg">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/images/one.jpg">
 <meta property="og:image" content="http://www.tjl-myblog.cn/images/images/blog_article/Go学习笔记/1.png">
 <meta property="og:image" content="http://www.tjl-myblog.cn/..images/.deploy_git/images/blog_article/GO学习笔记/1.jpg">
 <meta property="og:image" content="http://www.tjl-myblog.cn/..images/.deploy_git/images/blog_article/GO学习笔记/2.jpg">
 <meta property="og:image" content="http://www.tjl-myblog.cn/..images/.deploy_git/images/blog_article/GO学习笔记/3.jpg">
 <meta property="og:image" content="http://www.tjl-myblog.cn/..images/.deploy_git/images/blog_article/GO学习笔记/4.jpg">
-<meta property="og:updated_time" content="2020-12-26T15:53:41.129Z">
+<meta property="og:updated_time" content="2020-12-27T01:58:41.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Go学习笔记">
 <meta name="twitter:description" content="Go学习的记录过程">
-<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/images/one.jpg">
 
 
 
@@ -430,8 +430,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:53:41+08:00">
-                2020-12-26
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-27T09:58:41+08:00">
+                2020-12-27
               </time>
             
           </span>
@@ -526,7 +526,7 @@
       
 
       
-        <p><img src="images/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="../../../images/images/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <p><a href="https://www.cnblogs.com/zsy/p/5215336.html" rel="external nofollow noopener noreferrer" target="_blank">Go语言下载、安装、配置</a>(下载之后其实会自动帮你配好环境变量 如果没有配好的可自行配置)</p>
 <h2 id="Go语言标准库常用的包及功能"><a href="#Go语言标准库常用的包及功能" class="headerlink" title="Go语言标准库常用的包及功能"></a>Go语言标准库常用的包及功能</h2><table>
 <thead>
@@ -638,7 +638,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="Go语言的目录结构"><a href="#Go语言的目录结构" class="headerlink" title="Go语言的目录结构"></a>Go语言的目录结构</h2><p><img src="images/images/blog_article/Go学习笔记/1.png" alt="图片消失啦"></p>
+<h2 id="Go语言的目录结构"><a href="#Go语言的目录结构" class="headerlink" title="Go语言的目录结构"></a>Go语言的目录结构</h2><p><img src="../../../images/images/blog_article/Go学习笔记/1.png" alt="图片消失啦"></p>
 <h2 id="一个简单的Go程序"><a href="#一个简单的Go程序" class="headerlink" title="一个简单的Go程序"></a>一个简单的Go程序</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Println(<span class="string">"Hello Go"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>下面是代码说明：<br>第 1 行，标记当前文件为 main 包，main 包也是 Go 程序的入口包。<br>第 3 行，导入 fmt 格式化操作包<br>第 6 行，程序执行的入口函数 main()。<br>第 6 行，打印<code>Hello Go</code></p>
 <h2 id="Go语言变量声明"><a href="#Go语言变量声明" class="headerlink" title="Go语言变量声明"></a>Go语言变量声明</h2><h3 id="了解变量"><a href="#了解变量" class="headerlink" title="了解变量"></a>了解变量</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a <span class="keyword">int</span></span><br><span class="line"><span class="keyword">var</span> b <span class="keyword">string</span></span><br><span class="line"><span class="keyword">var</span> c []<span class="keyword">float32</span></span><br><span class="line"><span class="keyword">var</span> d <span class="function"><span class="keyword">func</span><span class="params">()</span> <span class="title">bool</span></span></span><br><span class="line"><span class="function"><span class="title">var</span> <span class="title">e</span> <span class="title">struct</span></span>&#123;</span><br><span class="line">    x <span class="keyword">int</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -843,7 +843,7 @@
 <blockquote>
 <p>C语言中, 使用%d代表整型参数<br>下表中标出了常用的一些格式化样式中的动词及功能。</p>
 </blockquote>
-<p><strong>表：字符串格式化时常用动词及功能</strong><br>| 动 词 |                  功  能                  |<br>| :—: | :————————————–: |  |<br>|  %v   |             按值的本来值输出             |<br>|  %+v  | 在 %v 基础上，对结构体字段名和值进行展开 |<br>|  %#v  |         输出 Go 语言语法格式的值         |<br>|  %T   |      输出 Go 语言语法格式的类型和值      |<br>|  %%   |               输出 % 本体                |<br>|  %b   |           整型以二进制方式显示           |<br>|  %o   |           整型以八进制方式显示           |<br>|  %d   |           整型以十进制方式显示           |<br>|  %x   |          整型以十六进制方式显示          |<br>|  %X   |     整型以十六进制、字母大写方式显示     |<br>|  %U   |               Unicode 字符               |<br>|  %f   |                  浮点数                  |<br>|  %p   |          指针，十六进制方式显示          |</p>
+<p><strong>表：字符串格式化时常用动词及功能</strong><br>| 动 词 | 功  能 |<br>| :—: | :—-: ||<br>|  %v   |             按值的本来值输出             |<br>|  %+v  | 在 %v 基础上，对结构体字段名和值进行展开 |<br>|  %#v  |         输出 Go 语言语法格式的值         |<br>|  %T   |      输出 Go 语言语法格式的类型和值      |<br>|  %%   |               输出 % 本体                |<br>|  %b   |           整型以二进制方式显示           |<br>|  %o   |           整型以八进制方式显示           |<br>|  %d   |           整型以十进制方式显示           |<br>|  %x   |          整型以十六进制方式显示          |<br>|  %X   |     整型以十六进制、字母大写方式显示     |<br>|  %U   |               Unicode 字符               |<br>|  %f   |                  浮点数                  |<br>|  %p   |          指针，十六进制方式显示          |</p>
 <p><a href="https://blog.csdn.net/zgh0711/article/details/78843361" rel="external nofollow noopener noreferrer" target="_blank">fmt.Println 与 fmt.Printf 的区别，以及 fmt.Printf 的详细用法</a></p>
 <h3 id="Go语言Base64编码——电子邮件的基础编码格式"><a href="#Go语言Base64编码——电子邮件的基础编码格式" class="headerlink" title="Go语言Base64编码——电子邮件的基础编码格式"></a>Go语言Base64编码——电子邮件的基础编码格式</h3><p><strong>Base64</strong> 编码是常见的对 8 比特字节码的编码方式之一。<strong>Base64</strong> 可以使用 64 个可打印字符来表示二进制数据，电子邮件就是使用这种编码。</p>
 <p>Go 语言的标准库自带了 <strong>Base64</strong> 编码算法，通过几行代码就可以对数据进行编码，示例代码如下。</p>
@@ -1142,7 +1142,6 @@
       
 
       
-      
     </footer>
 
     <div> 
@@ -1157,7 +1156,7 @@
   <p><span>本文标题:</span><a href="/Go学习笔记.html">Go学习笔记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
   <p><span>发布时间:</span>2019年02月13日 - 16:02</p>
-  <p><span>最后更新:</span>2020年12月26日 - 23:12</p>
+  <p><span>最后更新:</span>2020年12月27日 - 09:12</p>
   <p><span>原始链接:</span><a href="/Go学习笔记.html" title="Go学习笔记">http://www.tjl-myblog.cn/Go学习笔记.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/Go学习笔记.html" aria-label="复制成功！"></i></span>
   </p>

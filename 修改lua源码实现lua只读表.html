@@ -122,12 +122,12 @@
 <meta property="og:site_name" content="TJL的博客">
 <meta property="og:description" content="实现Lua只读表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.tjl-myblog.cn/images/one.jpg">
-<meta property="og:updated_time" content="2020-12-26T15:53:40.408Z">
+<meta property="og:image" content="http://www.tjl-myblog.cn/images/images/one.jpg">
+<meta property="og:updated_time" content="2020-12-27T01:58:40.918Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="修改Lua源码实现Lua只读表">
 <meta name="twitter:description" content="实现Lua只读表">
-<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/one.jpg">
+<meta name="twitter:image" content="http://www.tjl-myblog.cn/images/images/one.jpg">
 
 
 
@@ -425,8 +425,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:53:40+08:00">
-                2020-12-26
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-27T09:58:40+08:00">
+                2020-12-27
               </time>
             
           </span>
@@ -521,7 +521,7 @@
       
 
       
-        <p><img src="images/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
+        <p><img src="../../../images/images/one.jpg" alt="图片还没有哦"><br><a id="more"></a></p>
 <p>首先找到元表枚举</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">enum</span> &#123;</span><br><span class="line">  TM_INDEX,</span><br><span class="line">  TM_NEWINDEX,</span><br><span class="line">  TM_ASSIGN,</span><br><span class="line">  TM_GC,</span><br><span class="line">  TM_MODE,</span><br><span class="line">  TM_LEN,</span><br><span class="line">  TM_EQ, <span class="comment">/* last tag method with `fast' access */</span></span><br><span class="line">  TM_ADD,</span><br><span class="line">  TM_SUB,</span><br><span class="line">  TM_MUL,</span><br><span class="line">  TM_DIV,</span><br><span class="line">  TM_MOD,</span><br><span class="line">  TM_POW,</span><br><span class="line">  TM_UNM,</span><br><span class="line">  TM_LT,</span><br><span class="line">  TM_LE,</span><br><span class="line">  TM_CONCAT,</span><br><span class="line">  TM_CALL,</span><br><span class="line">  TM_N <span class="comment">/* number of elements in the enum */</span></span><br><span class="line">&#125; TMS;</span><br></pre></td></tr></table></figure>
 <p>在里面添加一个元素 <code>TM_ASSIGN</code></p>
@@ -585,7 +585,6 @@
       
 
       
-      
     </footer>
 
     <div> 
@@ -600,7 +599,7 @@
   <p><span>本文标题:</span><a href="/修改lua源码实现lua只读表.html">修改Lua源码实现Lua只读表</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 游戏人生 的个人博客">游戏人生</a></p>
   <p><span>发布时间:</span>2019年02月21日 - 18:02</p>
-  <p><span>最后更新:</span>2020年12月26日 - 23:12</p>
+  <p><span>最后更新:</span>2020年12月27日 - 09:12</p>
   <p><span>原始链接:</span><a href="/修改lua源码实现lua只读表.html" title="修改Lua源码实现Lua只读表">http://www.tjl-myblog.cn/修改lua源码实现lua只读表.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.tjl-myblog.cn/修改lua源码实现lua只读表.html" aria-label="复制成功！"></i></span>
   </p>
